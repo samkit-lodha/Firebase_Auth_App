@@ -26,7 +26,6 @@ class LoginFragment : Fragment() {
     ): View? {
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_login,container,false)
 
-
         binding.wantRegisterButton.setOnClickListener {
             NavHostFragment.findNavController(this).navigate(LoginFragmentDirections.actionLoginFragmentToRegisterFragment())
         }

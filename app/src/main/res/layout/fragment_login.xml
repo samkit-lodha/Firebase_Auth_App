@@ -9,7 +9,6 @@
         android:layout_height="match_parent"
         tools:context=".LoginFragment">
 
-
         <ImageView
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
@@ -52,7 +51,14 @@
             android:backgroundTint="#E91E63"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-        
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/googleSignInButton"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
         <LinearLayout
             android:layout_margin="10dp"
             android:orientation="horizontal"
