@@ -30,6 +30,10 @@ class LoginFragment : Fragment() {
             NavHostFragment.findNavController(this).navigate(LoginFragmentDirections.actionLoginFragmentToRegisterFragment())
         }
 
+        binding.forgotbutton.setOnClickListener {
+            findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToForgotFragment())
+        }
+
         binding.loginButton.setOnClickListener {
             when{
                 TextUtils.isEmpty(binding.loginEmailId.text.toString().trim { it<=' ' }) -> {
